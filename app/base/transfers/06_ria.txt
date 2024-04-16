@@ -1,0 +1,41 @@
+Title: RIA Transfer Rates By Destination
+
+The RIA money transfer service provides a structured fee system for sending money internationally, with rates varying depending on the amount and destination. Below is an overview of these rates to aid both current and prospective customers in planning and executing their money transfers efficiently.
+
+**Destination: Georgia, Tajikistan, Israel**  
+For transfers to Georgia, Tajikistan, and Israel, fees start at 3 EUR/USD for amounts up to 400 EUR/USD and gradually increase to 8 EUR/USD for amounts up to 1,000 EUR/USD. For larger amounts, from 1,001 to 4,000 EUR/USD, the fee is 0.95% of the transfer amount.
+
+**Destination: Ukraine, Russia**  
+For Ukraine and Russia, the rates are lower, starting at 2 EUR/USD for amounts up to 100 EUR/USD. For transactions exceeding 201 EUR/USD to 4,000 EUR/USD, the fee is adjusted to 1.6% of the transferred sum.
+
+**Destination: Mongolia, Kyrgyzstan, Armenia, Moldova, Bulgaria, Cyprus, Czech Republic**  
+Sending funds to these countries incurs a 3 EUR/USD fee for amounts up to 100 EUR/USD, increasing slightly for higher amounts. The rate is capped at 1.5% for transfers between 201 EUR/USD and 4,000 EUR/USD.
+
+**Destination: France, United Kingdom, Belgium, Norway, Switzerland, Netherlands, Lithuania, Sweden, Denmark, Portugal, Austria, Poland**  
+The starting fee is 2 EUR/USD for transfers up to 50 EUR/USD, with incremental increases for larger amounts. Transfers above 200 EUR/USD are subject to a 1.5% fee.
+
+**Destination: Germany, Spain, Italy**  
+Transfers to these countries start with a 2 EUR/USD fee for amounts up to 100 EUR/USD and have a slightly lower maximum rate of 1.45% for amounts ranging from 201 to 4,000 EUR/USD.
+
+**Destination: USA, Canada, Australia**  
+A flat fee of 5 EUR/USD is applied for amounts up to 300 EUR/USD, with larger transactions charged at 1.6% up to the 4,000 EUR/USD limit.
+
+**Destination: Macedonia, Kosovo, Serbia, Greece, Montenegro**  
+For these destinations, fees start at 3 EUR/USD for amounts up to 200 EUR/USD, with a 1.5% charge on higher amounts.
+
+**Destination: Turkey**  
+Turkey enjoys fees starting at 2 EUR/USD for amounts up to 100 EUR/USD, and larger transactions are charged at 1.5%.
+
+**Destination: UAE**  
+Sending money to the UAE involves a starting fee of 2.5 EUR/USD for lower amounts, progressing to a 1.5% fee for transactions over 200 EUR/USD.
+
+**Destination: Vietnam, Nepal**  
+These countries benefit from the lowest starting fee of 1 EUR/USD for amounts up to 200 EUR/USD, with a 0.9% rate for larger transfers.
+
+**Destination: China, India, Sri Lanka, Bangladesh**  
+A reasonable starting fee of 1.8 EUR/USD applies for small transfers, increasing to 1.4% for transactions above 100 EUR/USD.
+
+**Other Destinations**  
+For other unspecified destinations, rates start at 2.5 EUR/USD for amounts up to 100 EUR/USD, reaching 2.2% for larger transfers.
+
+This overview helps customers navigate the cost of sending money internationally through RIA, ensuring transparency and enabling better financial decisions regarding international money transfers.

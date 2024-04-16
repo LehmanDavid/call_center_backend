@@ -1,0 +1,34 @@
+International Money Transfer Fees and Limits
+
+This document provides detailed information on the fees and limits for international money transfers from Russia and other nearby countries, as well as transfers within these regions. It is designed to assist our customers in understanding the costs associated with transferring money abroad.
+
+1. **Transfer Fees from Russia**
+
+When sending money from Russia, the transfer fee is typically 1%, with a maximum charge of 1,000 RUB, 20 USD/EUR, regardless of the transfer amount. However, fees can vary depending on the destination country:
+
+- **Abkhazia:** 1% fee for amounts less than 50,000 RUB or 2,000 USD/EUR; 0.5% for higher amounts.
+- **Armenia:** 1.3% fee, applicable to all amounts.
+- **Georgia:** 1% fee for amounts less than 50,000 RUB or 2,000 USD/EUR; 0.5%, max 1,000 RUB, 30 USD/EUR for higher amounts.
+- **Latvia & Lithuania:** 1.5% fee, with a maximum of 75 USD/EUR, for all transfer amounts.
+- **Tajikistan:** 1.4% fee, max 1,000 RUB, 35 USD/EUR, applicable to all amounts.
+- **Uzbekistan & South Ossetia:** 1.5% fee for all transferred amounts.
+
+The maximum transfer amount for most countries is unrestricted, but for Estonia, the maximum sending limit is 10,000 USD/EUR.
+
+2. **Transfers within the Near Abroad**
+
+Transfers between certain countries in the Near Abroad (former Soviet states) include the following fees and conditions:
+
+- **From Azerbaijan:** 1.2% for transfers to Azerbaijan, Uzbekistan, the Baltic states, and other Near Abroad countries; 1.5% (max 75 USD/EUR) for the Baltic states.
+- **From Belarus and Georgia:** Similar fees apply, with variations for specific destinations.
+- **Latvia & Lithuania:** For transfers within the Near Abroad, a 1.5% fee is charged; however, for transfers to Latvia and Lithuania, the fee is 1.5%, max 75 USD/EUR.
+- **Moldova and Tajikistan:** Charges a 1.2% fee for most destinations, with slightly higher fees for specific countries.
+
+3. **Maximum Transfer Amounts**
+
+For all transfers:
+- **Within Russia:** The maximum is 600,000 RUB or 20,000 USD/EUR. For non-residents of Russia transferring foreign currency within the Russian Federation, the same limits apply.
+- **From Russia to Near Abroad countries and between these countries:** The maximum limit is 600,000 RUB or 20,000 USD/EUR.
+- **To countries outside of these regions:** Limits are established according to the national legislation of the recipient country.
+
+Additionally, the overall number and total amount of transfers are not restricted, with the exception that transfers by Russian Federation residents outside Russia are limited to 5,000 USD (or equivalent in RUB/EUR) per operational day, according to Russian currency regulations.

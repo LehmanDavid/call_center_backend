@@ -1,0 +1,33 @@
+Moneygram Transfer Fees
+
+Moneygram provides a convenient way to send money to various countries around the world. The fees for sending money vary depending on the destination country and the amount being sent. Below is a summary of the fees for different regions and amounts:
+
+Destination: Armenia, Georgia, Kazakhstan, Kyrgyzstan, Russia, Belarus, Uzbekistan, Moldova
+- $0.00 to $200.00: $3.00 USD
+- $200.01 to $400.00: $6.00 USD
+- $400.01 to $600.00: $9.00 USD
+- Additional tiers up to $4000+: $75.00 USD
+
+Destination: Ukraine
+- $100.00 to $200.00: $5.00 USD
+- $200.01 to $400.00: $9.00 USD
+- Additional tiers up to $5000+: $75.00 USD
+
+Destination: China
+- $100.00 to $300.00: $9.00 USD
+- $300.01 to $600.00: $18.00 USD
+- Additional tiers up to $1800+: $45.00 USD
+
+Destination: UAE, Malaysia, Puerto Rico, Turkey, USA, Canada, UK, Ireland, Israel, South Korea, Czech Republic
+- $0.00 to $100.00: $10.00 USD
+- $100.01 to $300.00: $18.00 USD
+- Additional tiers up to $3000+: $50.00 USD
+
+Other Countries
+- $0.00 to $100.00: $10.00 USD
+- $100.01 to $250.00: $18.00 USD
+- Additional tiers up to $3000+: $100.00 USD
+
+Note: The commission for sending transfers from Uzbekistan has been in effect since June 2021 and may be subject to change. Besides the transfer fee, a currency conversion fee may also be applied. Moneygram might earn from currency conversion. Service availability depends on the agent's working hours and regulatory compliance. For more information, please visit the Moneygram website.
+
+Moneygram and "Globe" are registered trademarks of Moneygram.

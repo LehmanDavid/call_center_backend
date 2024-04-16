@@ -1,0 +1,12 @@
+Title: Guideline for Money Transfers within Agrobank
+
+Agrobank provides a convenient way for its customers to send money in both national and foreign currencies. This functionality is available within the Agrobank system, making it easier for customers to transfer funds as per their needs. Below is a detailed outline of the fees associated with these transactions.
+
+For money transfers in national currency within the Agrobank system, the following commission fees apply based on the amount being transferred:
+- For transactions up to 999,000 sum, a 2% fee is charged.
+- Transactions ranging from 1,000,000 sum to 9,999,000 sum attract a 1% fee.
+- For amounts exceeding 10,000,000 sum, the commission fee is reduced to 0.5%.
+
+In addition to transfers in the national currency, Agrobank also facilitates money transfers in US dollars within its system. A uniform commission rate of 0.5% is applied to these transactions, irrespective of the amount being transferred. This aims to provide a cost-effective solution for customers who need to carry out international transactions.
+
+By offering differentiated commission rates for different transaction amounts and currencies, Agrobank aims to accommodate the diverse financial needs of its customers. Whether you are transferring small or large sums, and whether your transactions are domestic or international, these structured fees are designed to optimize the cost-effectiveness of your money transfers.
