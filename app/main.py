@@ -7,8 +7,8 @@ from sqlalchemy.orm import Session
 from prompts import construct_prompt
 from agent import agent
 import grpc
-# import cloudapi.output.yandex.cloud.ai.stt.v3.stt_pb2 as stt_pb2
-# import cloudapi.output.yandex.cloud.ai.stt.v3.stt_service_pb2_grpc as stt_service_pb2_grpc
+from speechkit import DataStreamingRecognition, Session
+from speechkit.auth import generate_jwt
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -17,7 +17,17 @@ load_dotenv()
 
 app = FastAPI()
 
-folder_id = os.getenv("YANDEX_FOLDER_ID")
+api_key = os.getenv('YANDEX_API_KEY')
+
+session = Session.from_api_key(api_key)
+data_streaming_recognition = DataStreamingRecognition(
+    session,
+    language_code='ru-RU',
+    audio_encoding='LINEAR16_PCM',
+    sample_rate_hertz=8000,
+    partial_results=True,
+    single_utterance=False,
+)
 
 
 @app.get("/")
@@ -25,47 +35,42 @@ def read_root():
     try:
         query = 'Hey, tell me about youself'
         full_prompt = construct_prompt(query_str=query)
-        agent_resp = agent.query(full_prompt)
-        response_text = agent_resp.response
-        return {"response": response_text}
+        # agent_resp = agent.query(full_prompt)
+        # response_text = agent_resp.response
+        return {"response": 'working'}
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
-# @app.post("/stream-recognize")
-# async def stream_recognize(request: Request):
-#     channel = get_stt_channel()
-#     stub = stt_service_pb2_grpc.SttServiceStub(channel)
-#     requests = generate_streaming_request(folder_id)
-#     responses = stub.StreamingRecognize(requests)
-#     async for response in responses:
-#         for result in response.results:
-#             for alternative in result.alternatives:
-#                 print(alternative.text)
-#     return {"status": "completed"}
+@app.post("/stream-recognize")
+async def stream_recognize(request: Request):
 
+    async def audio_generator():
+        async for chunk in request.stream():
+            if chunk:
+                yield chunk
+            else:
+                break
 
+    try:
+        recognition_iterator = data_streaming_recognition.recognize(
+            audio_generator(), chunk_size=4000
+        )
 
-# folder_id = os.getenv("YANDEX_FOLDER_ID")
+        results = []
+        async for text, final, end_of_utterance in recognition_iterator:
+            if text:
+                results.append(text[0])
+            if final:
+                break
 
+        return {"status": "completed", "transcription": results}
 
-# def get_stt_channel():
-#     credentials = grpc.ssl_channel_credentials()
-#     return grpc.secure_channel('stt.api.cloud.yandex.net:443', credentials)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
-
-# def generate_streaming_request(folder_id):
-#     specification = stt_pb2.RecognitionSpec(
-#         language_code='ru-RU',
-#         model='general',
-#         partial_results=True,
-#         audio_encoding='LINEAR16_PCM',
-#         sample_rate_hertz=8000
-#     )
-#     streaming_config = stt_pb2.RecognitionConfig(
-#         specification=specification, folder_id=folder_id)
-#     yield stt_pb2.StreamingRecognitionRequest(config=streaming_config)
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=5000, reload=True)

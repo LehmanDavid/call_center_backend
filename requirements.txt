@@ -2,7 +2,8 @@ llama-index==0.10.29
 python-dotenv==1.0.1
 fastapi==0.110.1
 uvicorn==0.29.0
-grpcio 
-grpcio-tools 
-aiofiles 
+grpcio
+grpcio-tools
+aiofiles
 httpx
+speechkit==2.2.2
