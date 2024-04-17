@@ -6,9 +6,7 @@ import logging
 from sqlalchemy.orm import Session
 from prompts import construct_prompt
 from agent import agent
-import grpc
 from speechkit import DataStreamingRecognition, Session
-from speechkit.auth import generate_jwt
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
