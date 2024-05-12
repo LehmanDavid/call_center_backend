@@ -40,10 +40,11 @@ tools = [
     ),
 ]
 
-llm = openai.OpenAI(model="gpt-3.5-turbo-0613",
-                    api_key=os.getenv('OPENAI_API_KEY'),
-                    max_tokens=512,
-                    temperature=0.7,
-                    )
+llm = openai.OpenAI(
+    model="gpt-3.5-turbo-0613",
+    api_key=os.getenv('OPENAI_API_KEY'),
+    max_tokens=320,
+    temperature=0.7,
+)
 
 agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)

@@ -1,7 +1,6 @@
 import os
 from llama_index.core import StorageContext, VectorStoreIndex, load_index_from_storage
 from llama_index.core import SimpleDirectoryReader
-from pathlib import Path
 
 
 def read_text_files_from_directory(directory_path):
@@ -27,7 +26,8 @@ def get_or_create_index(data, index_name, storage_base_dir='storage'):
 
 
 _cards_data = read_text_files_from_directory(os.path.join('app/base', 'cards'))
-_credits_data = read_text_files_from_directory(os.path.join('app/base', 'credits'))
+_credits_data = read_text_files_from_directory(
+    os.path.join('app/base', 'credits'))
 _deposits_data = read_text_files_from_directory(
     os.path.join('app/base', 'deposits'))
 _transfers_data = read_text_files_from_directory(
