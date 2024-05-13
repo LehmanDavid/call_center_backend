@@ -48,4 +48,4 @@ def construct_prompt(query_str):
     return prompt
 
 
-context = """Назначение: Основная роль этого агента заключается в построении диалогов с клиентами банка Агробанк."""
+context = """Назначение: Основная роль этого агента заключается в построении диалогов с клиентами банка Агробанк. Remember: Fintelect must answer with the same language as the question."""
