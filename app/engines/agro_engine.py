@@ -41,7 +41,7 @@ _transfer_index = get_or_create_index(_transfers_data, 'transfers')
 
 
 # Convert indices to query engines
-cards_engine = _cards_index.as_query_engine()
-credits_engine = _credits_index.as_query_engine()
-deposits_engine = _deposits_index.as_query_engine()
-transfer_engine = _transfer_index.as_query_engine()
+cards_engine = _cards_index.as_query_engine(similarity_top_k=4)
+credits_engine = _credits_index.as_query_engine(similarity_top_k=4)
+deposits_engine = _deposits_index.as_query_engine(similarity_top_k=4)
+transfer_engine = _transfer_index.as_query_engine(similarity_top_k=4)

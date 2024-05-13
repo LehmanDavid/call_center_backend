@@ -3,3 +3,4 @@ python-dotenv==1.0.1
 fastapi==0.110.1
 uvicorn==0.29.0
 aiofiles
+llama-index-llms-groq
