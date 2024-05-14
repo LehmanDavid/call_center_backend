@@ -5,7 +5,7 @@ import uvicorn
 import logging
 from prompts import construct_prompt
 from agent import agent
-
+import time
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -13,15 +13,16 @@ load_dotenv()
 
 app = FastAPI()
 
-api_key = os.getenv('YANDEX_API_KEY')
-
 
 @app.post("/get-response")
 def read_root(query: str):
     try:
+        start_time = time.time()
         full_prompt = construct_prompt(query_str=query)
-        agent_resp = agent.query(full_prompt)
+        agent_resp = agent.query(full_prompt)        
         response_text = agent_resp.response
+        end_time = time.time()
+        logger.info(f"Response time: {end_time - start_time}")
         return {"response": response_text}
     except Exception as e:
         logger.error(e)
