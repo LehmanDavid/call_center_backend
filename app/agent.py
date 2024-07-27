@@ -3,8 +3,8 @@ import os
 from prompts import context
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.agent import ReActAgent
-from llama_index.llms import openai
 from engines.agro_engine import cards_engine, deposits_engine, transfer_engine, credits_engine
+from llama_index.llms.groq import Groq
 
 
 load_dotenv()
@@ -40,11 +40,18 @@ tools = [
     ),
 ]
 
-llm = openai.OpenAI(
-    model="gpt-3.5-turbo-0613",
-    api_key=os.getenv('OPENAI_API_KEY'),
-    max_tokens=320,
-    temperature=0.7,
-)
+try:
+    groq_client = Groq(
+        model="llama3-8b-8192",
+        api_key=os.getenv('GROQ_API_KEY'),
+    )
+except Exception as e:
+    raise e
 
-agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
+
+agent = ReActAgent.from_tools(
+    tools,
+    llm=groq_client,
+    verbose=True,
+    context=context
+)
